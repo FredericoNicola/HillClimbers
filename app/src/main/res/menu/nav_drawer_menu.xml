@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_button"
+            android:title="Home" />
+        <item
+            android:id="@+id/allroads"
+            android:icon="@drawable/ic_car_roads_button"
+            android:title="All Roads" />
+        <item
+            android:id="@+id/account"
+            android:icon="@drawable/ic_account_button"
+            android:title="Account" />
+        <item
+            android:id="@+id/social"
+            android:icon="@drawable/ic_social"
+            android:title="Social Media" />
+    </group>
+
+
+</menu>

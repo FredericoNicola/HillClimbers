@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "671022997058",
+    "project_id": "hillclimbers-ca97f",
+    "storage_bucket": "hillclimbers-ca97f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671022997058:android:1796db2eb18575243457db",
+        "android_client_info": {
+          "package_name": "com.example.hillclimbers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671022997058-4e7bi1lma274mkbeefm2hqdf7st0qu08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hillclimbers",
+            "certificate_hash": "b68d1f88fc9436521dc89e88bd34ce446f86fb97"
+          }
+        },
+        {
+          "client_id": "671022997058-kr4gne1tt1omqe8a71mp8jdbcnsvbqv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4yTIJFEZ0wYO-fZPm3nMEXVTHY4mzuaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671022997058-kr4gne1tt1omqe8a71mp8jdbcnsvbqv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
