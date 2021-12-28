@@ -60,7 +60,7 @@ class AllroadsFragment : Fragment() {
 
         roadAdapter = UserAdapter(firestoneRecyclerOptions)
 
-        recyclerView.layoutManager = LinearLayoutManager(getContext())
+        recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = roadAdapter
         return recyclerView
     }

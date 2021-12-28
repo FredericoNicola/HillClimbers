@@ -5,6 +5,8 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
@@ -28,18 +30,26 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
 
     }
 
-    class UserAdapterVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    open class UserAdapterVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var title = itemView.desc_post_title
         var desc = itemView.desc_post_desc
         var link = itemView.link_desc
 
         init {
             itemView.setOnClickListener {
-                Intent(Intent.ACTION_VIEW, Uri.parse("$link"))
+                val position = adapterPosition
+                var titledesc = title
+                var descdesc = desc
+                var linkdesc = link
+
+                println("isto é o titulo ${title.text} \n isto é a desc ${desc.text} \n isto é o link ${link.text} \n isto é o id $position")
+                val context = itemView.context
+
+                context.startActivity(Intent(context, RoadDetails::class.java))
+
             }
         }
-
-
     }
+
 }
 
