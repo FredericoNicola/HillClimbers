@@ -66,7 +66,7 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
                context.startActivity(intent)
 
 
-               //val intent = intent.putExtra(titledesc).toString
+               /////val intent = intent.putExtra(titledesc).toString
               // context.startActivity(Intent(context, RoadDetails::class.java))
 
            }
