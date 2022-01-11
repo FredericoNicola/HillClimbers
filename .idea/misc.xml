@@ -4,16 +4,36 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../layout/custom_preview.xml" value="0.37083333333333335" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/home_icon.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_account_button.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_add_btn.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_car_roads_button.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_eheh.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_home_button.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_outline_home_24.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_social.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_web.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/nav_item_colour_selected.xml" value="0.371875" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.2994791666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/fragment_addroad.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/fragment_allroads.xml" value="0.19791666666666666" />
-        <entry key="app/src/main/res/layout/item_with_desc.xml" value="0.3509963768115942" />
-        <entry key="app/src/main/res/layout/road_details.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/item_with_desc.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.17299898682877407" />
+        <entry key="app/src/main/res/layout/road_details.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/nav_drawer_menu.xml" value="0.17685185185185184" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.371875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.371875" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

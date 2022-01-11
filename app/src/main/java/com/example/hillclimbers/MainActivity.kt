@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
 
 
         // abrir a navbar
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        //toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
+        //drawerLayout.addDrawerListener(toggle)
+        //toggle.syncState()
+        //supportActionBar?.setDisplayHomeAsUpEnabled(true)
         //passagem entre fragments
 
 
@@ -39,9 +39,9 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
 
-        navView.setNavigationItemSelectedListener {
+        navView.setOnNavigationItemSelectedListener {
             val fragmentTransaction = fragmentManager.beginTransaction()
-            drawerLayout.closeDrawer(GravityCompat.START)
+
             when (it.itemId) {
                 R.id.home -> fragmentTransaction.replace(R.id.frame_layout, fragmentHome)
                     .addToBackStack(null).commit()

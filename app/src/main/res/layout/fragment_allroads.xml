@@ -4,7 +4,7 @@
     android:id="@+id/firestore_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="#ffffff">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -32,11 +32,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="26dp"
-        android:background="#000000"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="#ffff"
+        android:outlineAmbientShadowColor="#ffff"
         android:src="@drawable/ic_add_btn"
-        app:backgroundTint="#ffff"
-        app:rippleColor="#ffffff" />
+        app:backgroundTint="#000000"
+        app:rippleColor="#ffff" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
