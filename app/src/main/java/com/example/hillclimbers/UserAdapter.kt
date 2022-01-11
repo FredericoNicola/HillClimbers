@@ -45,6 +45,8 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
         var descdesc = itemView.desc_post_desc
         var linkdesc = itemView.link_desc
 
+        var passdata = titledesc.text
+
 
 
 
@@ -60,14 +62,12 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
 
                val intent = Intent(context, RoadDetails::class.java)
 
-               intent.putExtra("road_name", "$titledesc" )
-
-
-
+               intent.putExtra("road_name", "${titledesc.text}" )
+               context.startActivity(intent)
 
 
                //val intent = intent.putExtra(titledesc).toString
-               context.startActivity(Intent(context, RoadDetails::class.java))
+              // context.startActivity(Intent(context, RoadDetails::class.java))
 
            }
         }
