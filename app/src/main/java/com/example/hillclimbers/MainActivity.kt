@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         }
 
-        navView.setOnNavigationItemSelectedListener {
+        navView.setOnItemSelectedListener {
             val fragmentTransaction = fragmentManager.beginTransaction()
 
             when (it.itemId) {
