@@ -27,30 +27,17 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
 
     override fun onBindViewHolder(holder: UserAdapterVH, position: Int, model: PostModel) {
         holder.titledesc.text = model.road
-        holder.descdesc.text = model.dist
+        holder.distdist.text = model.dist
         holder.linkdesc.text = model.link
-
-        val titulo = holder.titledesc.toString()
-        val desc = holder.descdesc.toString()
-        val link = holder.linkdesc.toString()
-
-
-
-
+        holder.descdesc.text = model.desc
 
     }
 
     class UserAdapterVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var titledesc = itemView.desc_post_title
-        var descdesc = itemView.desc_post_desc
+        var distdist = itemView.desc_post_desc
         var linkdesc = itemView.link_desc
-
-        var passdata = titledesc.text
-
-
-
-
-
+        var descdesc = itemView.desc_desc
 
 
       init {
@@ -58,11 +45,12 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
 
              println("isto é o titulo ${titledesc.text} \n isto é a desc ${descdesc.text} \n isto é o link ${linkdesc.text} \n isto é o id $position")
                val context = itemView.context
-               val next = Intent()
 
                val intent = Intent(context, RoadDetails::class.java)
 
                intent.putExtra("road_name", "${titledesc.text}" )
+               intent.putExtra("road_desc","${descdesc.text}")
+               intent.putExtra("link_desc", "${linkdesc.text}")
                context.startActivity(intent)
 
 

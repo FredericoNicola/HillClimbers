@@ -12,7 +12,8 @@
         <item
             android:id="@+id/account"
             android:icon="@drawable/ic_account_button"
-            android:title="Account" />
+            android:title="Account"
+            />
         <item
             android:id="@+id/social"
             android:icon="@drawable/ic_social"

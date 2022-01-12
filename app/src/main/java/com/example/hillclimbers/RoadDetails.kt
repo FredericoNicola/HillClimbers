@@ -16,13 +16,28 @@ class RoadDetails : AppCompatActivity(){
 
 
         val roadtitle = intent.getStringExtra("road_name")
+        val roaddesc = intent.getStringExtra("road_desc")
+        var roadlink = intent.getStringExtra("link_desc")
         textView5.text = roadtitle
+        road_desc.text = roaddesc
 
         fstore = FirebaseFirestore.getInstance()
 
         fstore.collection("allroads").get()
 
         val db = fstore
+
+        println("$roadlink")
+
+        val iframe = "$roadlink"
+
+
+        web_view.settings.setJavaScriptEnabled(true);
+        web_view.loadData(iframe, "text/html", "utf-8");
+
+
+
+
     }
 
     private lateinit var fstore: FirebaseFirestore
