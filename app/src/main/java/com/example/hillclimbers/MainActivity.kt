@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.allroads -> fragmentTransaction.replace(R.id.frame_layout, fragmentAllroads)
                     .addToBackStack(null).commit()
                 R.id.account -> startActivity(Intent(this@MainActivity, LoginActivity::class.java))
-                R.id.social -> fragmentTransaction.replace(R.id.frame_layout, fragmentSocial)
-                    .addToBackStack(null).commit()
+               // R.id.social -> fragmentTransaction.replace(R.id.frame_layout, fragmentSocial)
+                //    .addToBackStack(null).commit()
             }
             true
         }

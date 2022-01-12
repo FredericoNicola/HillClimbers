@@ -15,12 +15,12 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navView"
+        style="@style/Widget.Design.BottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="start"
         android:background="#102027"
-        style="@style/Widget.Design.BottomNavigationView"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_drawer_menu" />

@@ -14,10 +14,10 @@
             android:icon="@drawable/ic_account_button"
             android:title="Account"
             />
-        <item
+     <!--   <item
             android:id="@+id/social"
             android:icon="@drawable/ic_social"
-            android:title="Social Media" />
+            android:title="Social Media" /> -->
     </group>
 
 
