@@ -1,5 +1,7 @@
 package com.example.hillclimbers
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +13,7 @@ import com.example.hillclimbers.R.layout.fragment_home
 import com.squareup.picasso.Picasso
 import com.synnapps.carouselview.CarouselView
 import com.synnapps.carouselview.ImageListener
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class HomeFragment : Fragment() {
@@ -56,8 +59,22 @@ class HomeFragment : Fragment() {
         carouselView.setImageListener(imageListener);
         carouselView.setPageCount(sampleImages.size);
 
+        imageView.setOnClickListener{
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.thedrive.com/news/43862/new-porsche-electric-turbo-patent-promises-less-lag-better-efficiency"))
+            startActivity(i)
+        }
+
+        textView6.setOnClickListener{
+            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.thedrive.com/news/43862/new-porsche-electric-turbo-patent-promises-less-lag-better-efficiency"))
+            startActivity(i)
+        }
+
+
+
 
     }
+
+
 }
 
 
