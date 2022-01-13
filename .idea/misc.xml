@@ -18,8 +18,9 @@
         <entry key="app/src/main/res/drawable/ic_web.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/nav_item_colour_selected.xml" value="0.371875" />
         <entry key="app/src/main/res/font/font.xml" value="0.20104166666666667" />
+        <entry key="app/src/main/res/layout-v21/road_details.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/actionbar.xml" value="0.35572916666666665" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.19479166666666667" />

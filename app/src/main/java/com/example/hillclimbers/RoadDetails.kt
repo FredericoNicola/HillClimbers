@@ -38,6 +38,9 @@ class RoadDetails : AppCompatActivity(){
 
         web_view.settings.setJavaScriptEnabled(true);
         web_view.loadData(iframe, "text/html", "utf-8");
+        web_view.isHorizontalScrollBarEnabled = false
+        web_view.isVerticalScrollBarEnabled = false
+
 
 
 
