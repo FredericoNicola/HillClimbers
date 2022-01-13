@@ -3,6 +3,7 @@ package com.example.hillclimbers
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -17,6 +18,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.displayOptions = ActionBar.DISPLAY_SHOW_CUSTOM
+        supportActionBar?.setCustomView(R.layout.actionbar)
+
+
 
 
         val fragmentManager = supportFragmentManager
@@ -47,7 +53,8 @@ class MainActivity : AppCompatActivity() {
                     .addToBackStack(null).commit()
                 R.id.allroads -> fragmentTransaction.replace(R.id.frame_layout, fragmentAllroads)
                     .addToBackStack(null).commit()
-                R.id.account -> startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                R.id.account -> fragmentTransaction.replace(R.id.frame_layout, LoginFragment())
+                    .addToBackStack(null).commit()
                // R.id.social -> fragmentTransaction.replace(R.id.frame_layout, fragmentSocial)
                 //    .addToBackStack(null).commit()
             }

@@ -18,8 +18,12 @@ class RoadDetails : AppCompatActivity(){
         val roadtitle = intent.getStringExtra("road_name")
         val roaddesc = intent.getStringExtra("road_desc")
         var roadlink = intent.getStringExtra("link_desc")
-        textView5.text = roadtitle
+        val time = intent.getStringExtra("time")
+        val dist = intent.getStringExtra("dist")
+        textView5.text = "$roadtitle - $dist"
         road_desc.text = roaddesc
+        roadtime.text = time
+
 
         fstore = FirebaseFirestore.getInstance()
 

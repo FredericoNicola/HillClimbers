@@ -30,6 +30,7 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
         holder.distdist.text = model.dist
         holder.linkdesc.text = model.link
         holder.descdesc.text = model.desc
+        holder.timedesc.text = model.time
 
     }
 
@@ -38,6 +39,7 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
         var distdist = itemView.desc_post_desc
         var linkdesc = itemView.link_desc
         var descdesc = itemView.desc_desc
+        var timedesc = itemView.time_desc
 
 
       init {
@@ -51,6 +53,8 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
                intent.putExtra("road_name", "${titledesc.text}" )
                intent.putExtra("road_desc","${descdesc.text}")
                intent.putExtra("link_desc", "${linkdesc.text}")
+               intent.putExtra("time","${timedesc.text}")
+               intent.putExtra("dist", "${distdist.text}")
                context.startActivity(intent)
 
 
