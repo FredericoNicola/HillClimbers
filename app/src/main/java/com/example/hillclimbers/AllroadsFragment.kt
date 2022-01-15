@@ -41,10 +41,8 @@ class AllroadsFragment : Fragment() {
         }
 
         btnAdd.setOnClickListener {
-            val fieldFragment = AddRoadFragment()
-            addChildFragment(fieldFragment, R.id.fragmet_field)
-
-
+                var fieldFragment = AddRoadFragment()
+                addChildFragment(fieldFragment, R.id.fragmet_field)
         }
     }
 

@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.annotation.Nullable
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_social.*
+import kotlinx.android.synthetic.main.road_details.*
 
 class SocialFragment : Fragment() {
 
@@ -34,6 +35,8 @@ class SocialFragment : Fragment() {
             val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/hillclimbers.pt"))
             startActivity(i)
         }
+
+
 
 
     }

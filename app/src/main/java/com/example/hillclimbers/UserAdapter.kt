@@ -31,6 +31,7 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
         holder.linkdesc.text = model.link
         holder.descdesc.text = model.desc
         holder.timedesc.text = model.time
+        holder.linkclick.text = model.link_map
 
     }
 
@@ -40,14 +41,12 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
         var linkdesc = itemView.link_desc
         var descdesc = itemView.desc_desc
         var timedesc = itemView.time_desc
+        var linkclick = itemView.link_click
 
 
       init {
            itemView.setOnClickListener { val position = adapterPosition
-
-             println("isto é o titulo ${titledesc.text} \n isto é a desc ${descdesc.text} \n isto é o link ${linkdesc.text} \n isto é o id $position")
                val context = itemView.context
-
                val intent = Intent(context, RoadDetails::class.java)
 
                intent.putExtra("road_name", "${titledesc.text}" )
@@ -55,15 +54,13 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
                intent.putExtra("link_desc", "${linkdesc.text}")
                intent.putExtra("time","${timedesc.text}")
                intent.putExtra("dist", "${distdist.text}")
+               intent.putExtra("link_click", "${linkclick.text}")
+
                context.startActivity(intent)
 
-
-               /////val intent = intent.putExtra(titledesc).toString
-              // context.startActivity(Intent(context, RoadDetails::class.java))
 
            }
         }
     }
-
 }
 

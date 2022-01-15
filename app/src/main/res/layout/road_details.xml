@@ -29,14 +29,14 @@
         android:layout_width="348dp"
         android:layout_height="142dp"
         android:layout_marginBottom="48dp"
-        android:text="details"
         android:padding="5dp"
+        android:text="details"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/web_view"
-        app:layout_constraintVertical_bias="0.361" />
+        app:layout_constraintVertical_bias="0.694" />
 
     <TextView
         android:id="@+id/roadtime"
@@ -66,12 +66,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.274" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+    <Button
+        android:id="@+id/map_link"
+        android:layout_width="353dp"
+        android:layout_height="46dp"
+        android:text="Go to map"
+        app:layout_constraintBottom_toTopOf="@+id/road_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/web_view" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

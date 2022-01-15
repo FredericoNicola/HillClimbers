@@ -26,10 +26,10 @@ class MainActivity : AppCompatActivity() {
 
 
         val fragmentManager = supportFragmentManager
-        val fragmentHome = HomeFragment()
-        val fragmentAllroads = AllroadsFragment()
+       // val fragmentHome = HomeFragment()
+        // val fragmentAllroads = AllroadsFragment()
         //val activitytAccount = @LoginActivity
-        val fragmentSocial = SocialFragment()
+        // val fragmentSocial = SocialFragment()
 
 
         // abrir a navbar
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
 
         if (savedInstanceState == null) {
-            fragmentManager.beginTransaction().replace(R.id.frame_layout, fragmentHome)
+            fragmentManager.beginTransaction().replace(R.id.frame_layout, HomeFragment())
                 .commit()
         }
 
@@ -49,9 +49,9 @@ class MainActivity : AppCompatActivity() {
             val fragmentTransaction = fragmentManager.beginTransaction()
 
             when (it.itemId) {
-                R.id.home -> fragmentTransaction.replace(R.id.frame_layout, fragmentHome)
+                R.id.home -> fragmentTransaction.replace(R.id.frame_layout, HomeFragment())
                     .addToBackStack(null).commit()
-                R.id.allroads -> fragmentTransaction.replace(R.id.frame_layout, fragmentAllroads)
+                R.id.allroads -> fragmentTransaction.replace(R.id.frame_layout, AllroadsFragment())
                     .addToBackStack(null).commit()
                 R.id.account -> fragmentTransaction.replace(R.id.frame_layout, LoginFragment())
                     .addToBackStack(null).commit()
