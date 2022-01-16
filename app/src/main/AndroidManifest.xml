@@ -15,12 +15,14 @@
         <activity android:name=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.hillclimbers.MainActivity" />
+                android:value="com.example.hillclimbers.MainActivity"
+                android:screenOrientation="portrait"/>
         </activity>
         <activity android:name=".RegisterActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.hillclimbers.MainActivity" />
+                android:value="com.example.hillclimbers.MainActivity"
+                android:screenOrientation="portrait"/>
         </activity>
         <activity android:name=".MainActivity"
             android:exported="true">
@@ -31,7 +33,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RoadDetails" />
+        <activity android:name=".RoadDetails"
+            android:screenOrientation="portrait"/>
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"
