@@ -1,14 +1,9 @@
 package com.example.hillclimbers
 
 import android.content.Intent
-import android.content.IntentSender
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
-import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
@@ -32,6 +27,8 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
         holder.descdesc.text = model.desc
         holder.timedesc.text = model.time
         holder.linkclick.text = model.link_map
+        holder.stars.text = model.stars
+        holder.nvotes.text = model.stars
 
     }
 
@@ -42,6 +39,8 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
         var descdesc = itemView.desc_desc
         var timedesc = itemView.time_desc
         var linkclick = itemView.link_click
+        var stars = itemView.stars
+        var nvotes = itemView.nvotes
 
 
       init {
@@ -55,6 +54,8 @@ class UserAdapter(options: FirestoreRecyclerOptions<PostModel>) :
                intent.putExtra("time","${timedesc.text}")
                intent.putExtra("dist", "${distdist.text}")
                intent.putExtra("link_click", "${linkclick.text}")
+               intent.putExtra("stars", "${stars.text}")
+               intent.putExtra("nvotes", "${nvotes.text}")
 
                context.startActivity(intent)
 

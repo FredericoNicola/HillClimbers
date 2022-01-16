@@ -7,5 +7,7 @@ data class PostModel(
     val desc: String? = null,
     val time: String? = null,
     val link_map: String? = null,
+    val stars: String? = null,
+    val nvotes: String? = null
 
 )
