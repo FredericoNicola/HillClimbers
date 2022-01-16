@@ -4,13 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_allroads.*
 
 
@@ -38,6 +41,10 @@ class AllroadsFragment : Fragment() {
             val transaction = childFragmentManager.beginTransaction()
             transaction.replace(frameId, fragment)
                 .addToBackStack(null).commit()
+        }
+        val user = Firebase.auth.currentUser
+        if (user != null){
+            btnAdd.isVisible = true
         }
 
         btnAdd.setOnClickListener {
