@@ -8,23 +8,6 @@
 
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="146dp"
-        android:layout_height="34dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:text="Road Details"
-        android:textAlignment="center"
-        android:textSize="50px"
-        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.147"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684" />
-
-    <TextView
         android:id="@+id/road_desc"
         android:layout_width="362dp"
         android:layout_height="131dp"
@@ -38,8 +21,8 @@
 
     <TextView
         android:id="@+id/roadtime"
-        android:layout_width="164dp"
-        android:layout_height="34dp"
+        android:layout_width="185dp"
+        android:layout_height="55dp"
         android:padding="4dp"
         android:text="details"
         android:textAlignment="center"
@@ -47,10 +30,27 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/ratingBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="185dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Road Details"
+        android:textAlignment="center"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
 
     <WebView
         android:id="@+id/web_view"
