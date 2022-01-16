@@ -75,8 +75,9 @@
 
     <Button
         android:id="@+id/buttonRegister_Register"
-        android:layout_width="291dp"
-        android:layout_height="32dp"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:layout_width="292dp"
+        android:layout_height="39dp"
         android:background="#5C6BC0"
         android:text="Register"
         android:textColor="#ffffff"

@@ -6,21 +6,14 @@ import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.Toast
-import androidx.annotation.Nullable
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.example.hillclimbers.R.layout.activity_login
-import com.example.hillclimbers.R.layout.fragment_home
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.squareup.picasso.Picasso
-import com.synnapps.carouselview.CarouselView
-import com.synnapps.carouselview.ImageListener
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.fragment_allroads.*
 
 
 class LoginFragment : Fragment() {
@@ -136,6 +129,9 @@ class LoginFragment : Fragment() {
             buttonLogin.isVisible = false
             buttonRegister.isVisible = false
             textView2.isVisible = true
+            button6.isVisible = true
+            button7.isVisible = true
+            button8.isVisible = true
 
         }
 

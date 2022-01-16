@@ -23,8 +23,8 @@ class AddRoadFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_addroad, container, false)
     }
 
-    private fun addRoadToFireStore(road: String, dist: String) {
-        val allRoads = hashMapOf("road" to road, "dist" to dist)
+    private fun addRoadToFireStore(road: String, dist: String, desc: String, link: String, link_map: String, time: String) {
+        val allRoads = hashMapOf("road" to road, "dist" to dist, "desc" to desc,"link" to link, "link_map" to link_map, "time" to time)
         fStore.collection("allRoads")
             .add(allRoads as Map<String, Any>)
 
@@ -40,7 +40,11 @@ class AddRoadFragment : Fragment() {
         button2.setOnClickListener {
             var roadName: String = inputname.text?.trim().toString()
             var roadDist: String = inputkm.text?.trim().toString()
-            addRoadToFireStore(roadName, roadDist);
+            var roadTime: String = inputtime.text?.trim().toString()
+            var roadDesc: String = inputdesc.text?.trim().toString()
+            var roadLink: String = inputlink.text?.trim().toString()
+            var roadEmbeded: String = inputembeded.text?.trim().toString()
+            addRoadToFireStore(roadName, roadDist, roadDesc, roadLink, roadEmbeded, roadTime);
             val fragment: Fragment? = childFragmentManager.findFragmentById(R.id.fragmet_field)
             val frag = AddRoadFragment()
             fragmentManager?.beginTransaction()?.remove(this)?.commit()

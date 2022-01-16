@@ -19,8 +19,8 @@
 
     <LinearLayout
         android:id="@+id/fragmet_field"
-        android:layout_width="356dp"
-        android:layout_height="356dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_margin="20dp"
         android:orientation="vertical"
@@ -34,11 +34,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="70dp"
-        android:background="#ffff"
-        android:outlineAmbientShadowColor="#ffff"
-        android:src="@drawable/ic_add_btn"
-        app:backgroundTint="#000000"
-        app:rippleColor="#ffff" />
+        android:src="@drawable/ic_add_btn" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

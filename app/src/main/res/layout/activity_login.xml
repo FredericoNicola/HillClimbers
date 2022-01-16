@@ -24,12 +24,13 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
+        style="@android:style/Widget.Holo.EditText"
         android:layout_width="291dp"
         android:layout_height="45dp"
-        android:textColorHighlight="#5C6BC0"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColorHighlight="#5C6BC0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -51,8 +52,8 @@
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="133dp"
-        android:layout_height="33dp"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
         android:background="#5C6BC0"
         android:text="Login"
         android:textColor="#ffffff"
@@ -65,8 +66,9 @@
 
     <Button
         android:id="@+id/buttonRegister"
-        android:layout_width="133dp"
-        android:layout_height="33dp"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
         android:background="#5C6BC0"
         android:text="Register"
         android:textColor="#ffffff"
@@ -105,10 +107,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView8"
@@ -124,6 +126,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="415dp"
+        android:layout_height="56dp"
+        android:text="About"
+        android:textAlignment="textStart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="415dp"
+        android:layout_height="56dp"
+        android:text="Your Contributions"
+        android:textAlignment="textStart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="415dp"
+        android:layout_height="55dp"
+        android:text="Roads Driven"
+        android:textAlignment="textStart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.647" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
